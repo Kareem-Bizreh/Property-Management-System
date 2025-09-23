@@ -1,13 +1,15 @@
 # Property Management System Web (PMS)
 
 A modern and modular **Property Management System (PMS)** built with **React, Vite**, and **Clean Architecture**. It features distinct dashboards for:
+
 - **Admin**
 - **Real Estate Office**
 - **Service Provider**
 
 ---
 
-##  Architecture Overview
+## Architecture Overview
+
 ```
 src/
 ├── presentation/        # UI Layer (React components, pages, and routes)
@@ -34,88 +36,103 @@ src/
 └── main.jsx              # Application entry point
 ```
 
-
 This structure ensures:
+
 - Clear separation of concerns
 - Highly testable code
 - Ease of maintenance and scaling
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
+
 Ensure you have Node.js and npm installed
+
 ```bash
 node --version
 npm --version
 ```
 
 ---
-##  Setup
+
+## Setup
+
 ### Clone the repo
+
 ```bash
 git clone https://github.com/Kareem-Bizreh/Property-Management-System-Web.git
 cd Property-Management-System-Web
 ```
 
 ### Install dependencies
+
 ```bash
 npm install
 ```
 
 ---
-##  Environment Setup
+
+## Environment Setup
 
 ### Create a .env file in the root with your API base URL:
+
 ```env
 VITE_API_BASE_URL=https://api.yoursite.com
 ```
+
 Then install BackEnd and turn it on and you will have a BackEnd
+
 ### BackEnd Repo
+
 [Property Management System BackEnd](https://github.com/OnlyAbdullh/Property-Management-System-BackEnd)
 
-
 ---
-##  Usage
+
+## Usage
 
 - Visit `/login` to sign in (or start on the landing page).
 - After authentication, you'll be redirected to the correct dashboard based on your role:
-    - **Admin Dashboard**
-    - **Real Estate Office Dashboard**
-    - **Service Provider Dashboard**
+  - **Admin Dashboard**
+  - **Real Estate Office Dashboard**
+  - **Service Provider Dashboard**
 - Navigation is handled via **React Router** with:
-    - **Public Routes** – e.g., Login, Landing page
-    - **Private Routes** – Role-specific dashboards requiring authentication
+  - **Public Routes** – e.g., Login, Landing page
+  - **Private Routes** – Role-specific dashboards requiring authentication
 - Filters allow searching and sorting properties by:
-    - Governorate (City)
-    - Region
-    - Listing Type
-    - Status
+  - Governorate (City)
+  - Region
+  - Listing Type
+  - Status
 
 ---
+
 ## Core Features
 
 - **Clean Architecture**  
   Clear separation between layers:
-    - `presentation/` for UI components, pages, and routing
-    - `application/` for use-case logic and state management with Zustand
-    - `domain/` for entities and repository interfaces
-    - `infrastructure/` for API connections and storage logic
+
+  - `presentation/` for UI components, pages, and routing
+  - `application/` for use-case logic and state management with Zustand
+  - `domain/` for entities and repository interfaces
+  - `infrastructure/` for API connections and storage logic
 
 - **Advanced State Management with Zustand**  
   Lightweight and fast state container makes your app scalable and easy to maintain.
 
 - **Centralized API Handling using Axios**  
   Custom Axios instance with interceptors for:
-    - Automatic authentication handling
-    - Global error management, including unauthorized (401/403) redirects
+
+  - Automatic authentication handling
+  - Global error management, including unauthorized (401/403) redirects
 
 - **Role-Based Routing**  
   Separate route sets for:
-    - Admin
-    - Real Estate Office
-    - Service Provider
+
+  - Admin
+  - Real Estate Office
+  - Service Provider
 
 - **Entity Pattern Implementation**  
   Domain entities like Property ensure consistent data handling and business logic encapsulation.
@@ -125,6 +142,9 @@ Then install BackEnd and turn it on and you will have a BackEnd
 
 - **Responsive & Modern UI Design with Tailwind CSS**  
   Tailwind CSS + `@tailwindcss/vite` plugin help create a fully responsive interface that adapts on all screen sizes.
+
+- **UI designs fully matching the Figma prototypes**
+  designs 100% aligned with [Property Management System Figma](https://www.figma.com/design/i8O1XfwFww6YLYuiNFRrVy/Project-1---Property-MS?node-id=218-3680&p=f&t=VMt33NigoXYcyCy4-0) files
 
 - **Material UI Components & RTL Support**  
   Using MUI (`@mui/material` and `@mui/icons-material`) with Emotion styling for performant, themeable components and right-to-left text support.
@@ -145,6 +165,6 @@ Then install BackEnd and turn it on and you will have a BackEnd
   Visual feedback with spinners and skeletons for better UX.
 
 - **Utility Tools**
-    - `react-hook-form` for form state management and validation
-    - `react-router` for routing structures
-    - `reactjs-popup` for lightweight popup dialogs
+  - `react-hook-form` for form state management and validation
+  - `react-router` for routing structures
+  - `reactjs-popup` for lightweight popup dialogs
