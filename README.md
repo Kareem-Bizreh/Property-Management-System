@@ -143,7 +143,7 @@ Then install BackEnd and turn it on and you will have a BackEnd
 - **Responsive & Modern UI Design with Tailwind CSS**  
   Tailwind CSS + `@tailwindcss/vite` plugin help create a fully responsive interface that adapts on all screen sizes.
 
-- **UI designs fully matching the Figma prototypes**
+- **UI designs fully matching the Figma prototypes**  
   designs 100% aligned with [Property Management System Figma](https://www.figma.com/design/i8O1XfwFww6YLYuiNFRrVy/Project-1---Property-MS?node-id=218-3680&p=f&t=VMt33NigoXYcyCy4-0) files
 
 - **Material UI Components & RTL Support**  
